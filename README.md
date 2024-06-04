@@ -1,26 +1,23 @@
-# My plugin
+# Aleph Alpha Integration
 
 [![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)  
-[![Awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=Awesome+plugin&color=000000&style=for-the-badge&logo=cheshire_cat_ai)](https://)  
-[![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=F4F4F5&style=for-the-badge&logo=cheshire_cat_black)](https://)
 
-Write here all the useful information about your plugin.
+This plugin allows you to use [Aleph Alpha embeddings](https://docs.aleph-alpha.com/docs/tasks/semantic_embed/) in Cheshire Cat.
+To use it, you must have an [API Key Aleph Alpha](https://docs.aleph-alpha.com/docs/account/).
 
-This repository is the template to automate the release of official Cheshire Cat AI plugins. 
+## Parameters
 
-## Usage
+* aleph_alpha_api_key: API key for Aleph Alpha API.
+* compress_to_size: Should the returned embeddings come back as an original 5120-dim vector, or should it be compressed to 128-dim.
+* model_name: Model name to use.
+* normalize: Should returned embeddings be normalized.
 
-1. Create a new repository clicking on the `Use this template` button.
-2. Clone your new repo directly in the Cat's `plugins` folder.
-3. Run the `setup.py` script:
-```bash
-python setup.py
-```
-The script will prompt you to write the name of your plugin and make an initial setup setting the name in the files.
+### Aleph Alpha’s asymmetric semantic embedding.
 
-4. Start developing!
+AA provides you with an endpoint to embed a document and a query. The models were optimized to make the embeddings of documents and the query for a document as similar as possible.
 
-> **Important**
-> A new release of your plugin is triggered every time you set a new `version` in the `plugin.json` file.
-> Please, remember to set it correctly every time you want to release an update.
+### Aleph Alpha’s symmetric semantic embedding.
 
+Symmetric version of the Aleph Alpha’s semantic embeddings.
+
+The main difference is that here, both the documents and queries are embedded with a SemanticRepresentation.Symmetric

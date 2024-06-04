@@ -1,10 +1,9 @@
 {
-    "name": "My plugin",
+    "name": "Aleph Alpha Integration",
     "version": "0.0.1",
-    "description": "Description of my_plugin.",
-    "author_name": "Me",
-    "author_url": "https://mywebsite.me",
-    "plugin_url": "https://github.com/my_name/my_plugin",
-    "tags": "cat, template, example",
-    "thumb": "https://raw.githubusercontent.com/my_repo_path/my_plugin.png"
+    "description": "Integration to work with Aleph Alpha embeddings.",
+    "author_name": "nickprock",
+    "plugin_url": "https://github.com/nickprock/aleph-alpha-integration",
+    "tags": "cat, embeddings, integrations",
+    "thumb": "https://www.technologiepark-heidelberg.de/fileadmin/_processed_/c/6/csm_Aleph-Alpha_Logo_2f88a8f02e.png"
 }
